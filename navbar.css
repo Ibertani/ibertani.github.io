@@ -1,0 +1,151 @@
+
+@font-face {
+  font-family: 'AlloyInk';
+  src: url(AlloyInk-lgdWw.otf)}
+
+  @font-face {
+    font-family: 'Quhiri';
+    src: url(Qahiri-Regular.ttf)}
+
+    @font-face {
+      font-family: 'backslash';
+      src: url(Backslash-RpJol.otf)} 
+      
+      
+  
+header {
+background-color :  rgb(50, 119, 22, .5) ;
+color : rgb(95, 62, 95,.5)  ;
+text-shadow :  3px 3px 2px rgb(99, 99, 156), 4px 4px 4px purple; 
+width : 100%;
+height : 20%; 
+text-align : center ; 
+font-size: 50px;
+font-family: 'AlloyInk';
+padding: 0;
+margin: 0;
+}
+
+body {
+    font-family: 'AlloyInk';
+    color:   rgba(245, 245, 245, 0.7)  ;
+    background-color: rgb(188, 188, 212);
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-image:  linear-gradient(rgb(50, 119, 22, .5), rgb(99, 99, 156),   grey);
+    
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: inherit;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color : inherit;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(99, 99, 156);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(99, 99, 156);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  
+  .flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden; 
+  }
+
+  
+  
+  
+  /* Style the back side */
+  .flip-card-back   {
+    background-color: grey; 
+    color: white;
+    transform: rotateY(180deg);
+   
+  
+
+  }
+#info{
+  font-family: 'backslash';
+  font-size: 20px;
+}
+
+a{
+  font-family : 'backslash';
+  color: white;
+  
+}
