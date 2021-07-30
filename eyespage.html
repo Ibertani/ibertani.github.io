@@ -1,26 +1,40 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel = 'stylesheet' href = 'navbar.css'>
+    <link rel = 'stylesheet' href = 'homepg.css'>
     <style>
  
     </style>
 </head>
-    <body>
+  <header>  
+    <h1> Eyes Movement Exercise </h1>
+  </header>
+
+
+
+<body>
     
+
     <div class="navbar">
-      <a href="index.html">Home</a>
+      <a id ='a1' href="index.html">Home</a>
         <div class="dropdown">
-        <button class="dropbtn">Dropdown 
+        <button class="dropbtn"> Projects
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="pacmanpage.html">Pacmen Exercise</a>
-          <a href="eyespage.html">Eye movement Exercise</a>
-          <a href="bustrackerpage.html">Bus Tracker Exercise</a>
+          <a id = 'home' href="pacmanpage.html">Pacmen Exercise</a>
+          <a id = 'home' href="eyespage.html">Eye movement Exercise</a>
+          <a id = 'home' href="bustrackerpage.html">Bus Tracker Exercise</a>
         </div>
       </div> 
     </div>
+    
+    <p> This code animates a pair of eyes to follow a mouse moving around the screen. The eyes are divs positioned relative to eachother and are animated using the event mouse move, it also uses the properties clientx 
+      and clienty which are the mouse coordinates on the screen. <br>
+    <a href = 'https://github.com/Ibertani/Eye-movement'> GitHub Link </a>
+    </p>    
+
+
     <embed type = 'text/html' src = 'eyes.html' width = 800 height = 800></embed>
     
     </body>

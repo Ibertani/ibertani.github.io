@@ -1,23 +1,38 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel = 'stylesheet' href = 'navbar.css'>
+<link rel = 'stylesheet' href = 'homepg.css'>
     </head>
+    
+    <header>
+      <h1>
+     Bustracker Exercise
+
+    </h1>
+  
+  </header>
+    
     <body>
     
     <div class="navbar">
-      <a href="index.html">Home</a>
+      <a id = 'a1' href="index.html">Home</a>
         <div class="dropdown">
-        <button class="dropbtn">Dropdown 
+        <button class="dropbtn"> Projects 
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="pacmanpage.html">Pacmen Exercise</a>
-          <a href="eyespage.html">Eye movement Exercise</a>
-          <a href="bustrackerpage.html">Bus Tracker Exercise</a>
+          <a id = 'home' href="pacmanpage.html">Pacmen Exercise</a>
+          <a id = 'home' href="eyespage.html">Eye movement Exercise</a>
+          <a id = 'home' href="bustrackerpage.html">Bus Tracker Exercise</a>
         </div>
       </div> 
     </div>
-    <embed type = 'text/html' src = 'bustracker.html' width = 800 height = 800>
+    
+    <p>    This project is to track one of six bus lines in boston that run between harvard and mit campuses. 
+      The data is live through MBTA and accessed using a async function. The marker updates to show the new position of the bus every 15 seconds. <br>   
+    <a href = 'https://github.com/Ibertani/Eye-movement'>GitHub Link  </a>
+    
+    </p>
+    <embed type = 'text/html' src = 'bustracker.html' width = 500 height = 500>
     
     </body>
