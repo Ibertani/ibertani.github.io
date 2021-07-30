@@ -27,16 +27,29 @@ margin: 0;
 }
 
 body {
-    font-family: 'AlloyInk';
-    color:   rgba(245, 245, 245, 0.7)  ;
+    font-family: 'backslash';
+    color:   teal ;
+    text-align: center;
     background-color: rgb(188, 188, 212);
     padding: 0;
     margin: 0;
+  }
+
+  img{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 125px;
+    border-radius: 10%;
+    box-shadow:     3px 3px 2px rgb(99, 99, 156), 4px 4px 4px purple;
   }
   
   .navbar {
     overflow: hidden;
     background-image:  linear-gradient(rgb(50, 119, 22, .5), rgb(99, 99, 156),   grey);
+    font-family: 'AlloyInk';
+    color: whitesmoke;
     
   }
   
@@ -59,10 +72,12 @@ body {
     border: none;
     outline: none;
     color : inherit;
+    text-shadow: 3px 3px 3px teal, 3px 3px 3px red;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn {
@@ -76,6 +91,7 @@ body {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    
   }
   
   .dropdown-content a {
@@ -98,6 +114,9 @@ body {
   
   .flip-card {
     background-color: transparent;
+    top: 0;
+    left: 114;
+    position: absolute;
     width: 100%;
     height: 100px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -127,14 +146,19 @@ body {
     backface-visibility: hidden; 
   }
 
-  
+  .flip-card-front{
+    background-color: transparent;
+    font-size: 40px;
+    text-align: 30%;
+  }
   
   
   /* Style the back side */
   .flip-card-back   {
-    background-color: grey; 
+    background-color: transparent; 
     color: white;
     transform: rotateY(180deg);
+    
    
   
 
@@ -145,7 +169,26 @@ body {
 }
 
 a{
-  font-family : 'backslash';
+  font-family : 'AlloyInk';
   color: white;
+  text-shadow: 1px 1px 1px orange, 2px 2px 2px red;
   
+}
+
+#a1{
+font-family: inherit;
+text-shadow:  3px 3px 3px teal, 3px 3px 3px red ;
+}
+
+#home{
+  font-family : 'backslash'
+}
+
+h1{
+  font-size : 45px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+   transform: translate(-50%,-50%) ;
+   text-align: center;
 }
